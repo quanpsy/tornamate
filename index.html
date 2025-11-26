@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
@@ -38,6 +39,10 @@
       .no-scrollbar {
         -ms-overflow-style: none;
         scrollbar-width: none;
+      }
+      /* Safe area padding for bottom nav */
+      .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom, 20px);
       }
     </style>
   <script type="importmap">
